@@ -16,7 +16,6 @@ $clr-white: #fff;
 }
 
 body {
-  //   font-size: 1.125rem; //18px
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   background-color: $clr-white;
@@ -62,7 +61,7 @@ img {
 .btn {
   text-transform: capitalize;
   text-align: center;
-  font-size: 13px; //14px;
+  font-size: 0.8125rem; //13px;
   font-weight: 700;
   display: block;
   width: fit-content;
@@ -122,6 +121,8 @@ img {
   background: $clr-very-pale-cyan;
   min-height: 100vh;
 
+  background: url(../images/bg-hero-mobile.svg) top/cover no-repeat;
+
   &__top {
     align-items: center;
   }
@@ -150,7 +151,7 @@ img {
       padding: 0 1rem;
     }
     &--paragraph {
-      font-size: 16.5px;
+      font-size: 1.03125rem; //16.5px;
     }
   }
 }
@@ -176,7 +177,7 @@ img {
       margin-bottom: 1rem;
     }
     &--paragraph {
-      font-size: 15px;
+      font-size: 0.9375rem; //15px;
       line-height: 1.7;
       color: $clr-grayish-blue;
     }
@@ -201,7 +202,7 @@ img {
   justify-content: center;
   align-items: center;
   &__heading {
-    font-size: 18.7px;
+    font-size: 1.16875rem; //18.7px;
     margin-bottom: 1.5rem;
   }
 }
@@ -216,6 +217,14 @@ img {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%)
       contrast(100%);
     margin-bottom: 1.5rem;
+    transition: all 0.25s;
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
+    }
+    &:active {
+      transform: translateY(0);
+    }
   }
 
   &__contact {
@@ -246,13 +255,14 @@ img {
     &--link {
       text-transform: capitalize;
       color: $clr-white;
-      font-size: 18px;
+      font-size: 1.125rem; //18px;
       border-bottom: 1px solid transparent;
 
       animation-direction: center;
       transition: all 0.25s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-bottom: 1px solid currentColor;
       }
     }
@@ -298,7 +308,7 @@ img {
 
 .copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem; //12px;
   &__text {
   }
   &__attribution {
@@ -309,21 +319,23 @@ img {
   }
 }
 
-@media only screen and (min-width: 450px) {
+//450px
+@media only screen and (min-width: 28.125rem) {
   .btn {
     &--hero {
       margin: 2.5rem auto;
       width: 60%;
     }
     &--cta {
-      font-size: 16px;
+      font-size: 1rem;
       padding: 1rem 4rem;
       width: unset;
     }
   }
 }
 
-@media only screen and (min-width: 500px) {
+//500px
+@media only screen and (min-width: 31.25rem) {
   .hero {
     &__content {
       &--heading {
@@ -333,9 +345,10 @@ img {
   }
 }
 
-@media only screen and (min-width: 600px) {
+//600px
+@media only screen and (min-width: 37.5rem) {
   .container {
-    max-width: 550px;
+    max-width: 34.375rem; //550px;
     margin: 0 auto;
   }
 
@@ -345,23 +358,26 @@ img {
     }
   }
   .ready-cta__heading {
-    font-size: 25px;
+    font-size: 1.5625rem; //25px;
   }
   .footer {
     &__contact {
-      max-width: 400px;
+      max-width: 25rem; //400px;
     }
   }
 }
-@media only screen and (min-width: 800px) {
+
+//800px
+@media only screen and (min-width: 50rem) {
   .f-direction {
     flex-direction: row;
   }
   .container {
-    max-width: 780px;
+    max-width: 90%;
     margin: 0 auto;
   }
   .header {
+    background: url(../images/bg-hero-desktop.svg) top/cover no-repeat;
     padding-top: 3rem;
     &__logo {
       width: 13rem;
@@ -385,7 +401,7 @@ img {
         padding: unset;
       }
       &--paragraph {
-        font-size: 16.5px;
+        font-size: 1.03125rem; //16.5px;
       }
     }
     &__illustration {
@@ -397,16 +413,17 @@ img {
   }
   .btn {
     &--try {
-      font-size: 16px;
+      font-size: 1rem;
+      padding: 0.5rem 3rem;
     }
     &--hero {
-      margin: 2.5rem 0;
+      margin: 2rem 0;
       width: 70%;
     }
   }
 
   .section__text--heading {
-    font-size: 30px;
+    font-size: 1.875rem; //30px;
   }
   .split,
   .split--reverse {
@@ -415,27 +432,29 @@ img {
   }
   .split {
     & .section__text {
-      margin-left: 1.5rem;
+      margin-left: 4rem;
+      flex: 72%;
     }
   }
   .split--reverse {
     flex-direction: row-reverse;
     & .section__text {
-      margin-right: 1.5rem;
+      margin-right: 5rem;
+      flex: 69%;
     }
   }
   .ready-cta {
-    width: 85%;
+    width: 75%;
   }
 }
 
-@media only screen and (min-width: 1080px) {
+//1080px
+@media only screen and (min-width: 67.5rem) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem; //18px;
   }
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 62.5rem; //1000px;
   }
 
   .header {
@@ -474,21 +493,22 @@ img {
   }
   .btn {
     &--hero {
-      font-size: 16px;
+      font-size: 1rem;
     }
     &--cta {
       width: unset;
-      font-size: 18px;
+      font-size: 1rem;
     }
   }
 
   .ready-cta {
+    width: 65%;
     &__heading {
-      font-size: 30px;
+      font-size: 1.875rem; //30px;
     }
   }
   .copyright {
-    font-size: 16px;
+    font-size: 1rem;
     &__text {
       text-align: right;
       margin-bottom: 0.25rem;
@@ -499,13 +519,14 @@ img {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+//1200px
+@media only screen and (min-width: 75rem) {
   .container {
-    max-width: 1300px;
+    max-width: 81.25rem; //1300px;
   }
   .section {
     &__text--paragraph {
-      font-size: 18px;
+      font-size: 1.125rem; //18px;
     }
   }
   .header {
@@ -515,11 +536,12 @@ img {
     &__content {
       flex: 45%;
       margin-right: 3rem;
+      margin-bottom: 3rem;
       &--heading {
         font-size: 2.5rem;
       }
       &--paragraph {
-        font-size: 18px;
+        font-size: 1.125rem; //18px;
         padding-right: 1rem;
       }
     }
@@ -527,12 +549,17 @@ img {
       flex: 55%;
     }
   }
+  .container.hero.split.f-direction {
+    align-items: flex-end;
+  }
   .btn {
     &--hero {
       width: 50%;
     }
   }
   .footer {
-    padding: 8rem 3rem;
+    padding: 8rem 0 2rem;
   }
 }
+
+// SET HEADER BACKGROUND (CHECK DESIGN AND IMAGES FOLDER)

@@ -62,7 +62,7 @@ img {
 .btn {
   text-transform: capitalize;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
   display: block;
   width: -webkit-fit-content;
@@ -123,6 +123,7 @@ img {
 .header {
   background: #ebfbff;
   min-height: 100vh;
+  background: url(../images/bg-hero-mobile.svg) top/cover no-repeat;
 }
 
 .header__top {
@@ -160,7 +161,7 @@ img {
 }
 
 .hero__content--paragraph {
-  font-size: 16.5px;
+  font-size: 1.03125rem;
 }
 
 .main {
@@ -186,7 +187,7 @@ img {
 }
 
 .section__text--paragraph {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.7;
   color: #808d99;
 }
@@ -220,7 +221,7 @@ img {
 }
 
 .ready-cta__heading {
-  font-size: 18.7px;
+  font-size: 1.16875rem;
   margin-bottom: 1.5rem;
 }
 
@@ -235,6 +236,18 @@ img {
   -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(100%);
           filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(100%);
   margin-bottom: 1.5rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.footer__logo:hover, .footer__logo:focus {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.footer__logo:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .footer__contact {
@@ -270,7 +283,7 @@ img {
 .footer__item--link {
   text-transform: capitalize;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   border-bottom: 1px solid transparent;
   -webkit-animation-direction: center;
           animation-direction: center;
@@ -278,7 +291,7 @@ img {
   transition: all 0.25s;
 }
 
-.footer__item--link:hover {
+.footer__item--link:hover, .footer__item--link:focus {
   border-bottom: 1px solid currentColor;
 }
 
@@ -338,7 +351,7 @@ img {
 
 .copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .copyright__attribution {
@@ -349,41 +362,41 @@ img {
   color: #3e52a3;
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 28.125rem) {
   .btn--hero {
     margin: 2.5rem auto;
     width: 60%;
   }
   .btn--cta {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 1rem 4rem;
     width: unset;
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 31.25rem) {
   .hero__content--heading {
     font-size: 2.3rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5rem) {
   .container {
-    max-width: 550px;
+    max-width: 34.375rem;
     margin: 0 auto;
   }
   .header__logo {
     width: 8rem;
   }
   .ready-cta__heading {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .footer__contact {
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 50rem) {
   .f-direction {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -391,10 +404,11 @@ img {
             flex-direction: row;
   }
   .container {
-    max-width: 780px;
+    max-width: 90%;
     margin: 0 auto;
   }
   .header {
+    background: url(../images/bg-hero-desktop.svg) top/cover no-repeat;
     padding-top: 3rem;
   }
   .header__logo {
@@ -422,7 +436,7 @@ img {
     padding: unset;
   }
   .hero__content--paragraph {
-    font-size: 16.5px;
+    font-size: 1.03125rem;
   }
   .hero__illustration {
     -webkit-box-flex: 60%;
@@ -433,14 +447,15 @@ img {
     width: 100%;
   }
   .btn--try {
-    font-size: 16px;
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
   }
   .btn--hero {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     width: 70%;
   }
   .section__text--heading {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .split,
   .split--reverse {
@@ -450,7 +465,10 @@ img {
     text-align: left;
   }
   .split .section__text {
-    margin-left: 1.5rem;
+    margin-left: 4rem;
+    -webkit-box-flex: 72%;
+        -ms-flex: 72%;
+            flex: 72%;
   }
   .split--reverse {
     -webkit-box-orient: horizontal;
@@ -459,20 +477,22 @@ img {
             flex-direction: row-reverse;
   }
   .split--reverse .section__text {
-    margin-right: 1.5rem;
+    margin-right: 5rem;
+    -webkit-box-flex: 69%;
+        -ms-flex: 69%;
+            flex: 69%;
   }
   .ready-cta {
-    width: 85%;
+    width: 75%;
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 67.5rem) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 62.5rem;
   }
   .header {
     padding-top: 5rem;
@@ -505,17 +525,20 @@ img {
     margin-bottom: 1.5rem;
   }
   .btn--hero {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .btn--cta {
     width: unset;
-    font-size: 18px;
+    font-size: 1rem;
+  }
+  .ready-cta {
+    width: 65%;
   }
   .ready-cta__heading {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .copyright {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .copyright__text {
     text-align: right;
@@ -526,12 +549,12 @@ img {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75rem) {
   .container {
-    max-width: 1300px;
+    max-width: 81.25rem;
   }
   .section__text--paragraph {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .header {
     padding: 0 2ream;
@@ -541,12 +564,13 @@ img {
         -ms-flex: 45%;
             flex: 45%;
     margin-right: 3rem;
+    margin-bottom: 3rem;
   }
   .hero__content--heading {
     font-size: 2.5rem;
   }
   .hero__content--paragraph {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding-right: 1rem;
   }
   .hero__illustration {
@@ -554,11 +578,16 @@ img {
         -ms-flex: 55%;
             flex: 55%;
   }
+  .container.hero.split.f-direction {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   .btn--hero {
     width: 50%;
   }
   .footer {
-    padding: 8rem 3rem;
+    padding: 8rem 0 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
