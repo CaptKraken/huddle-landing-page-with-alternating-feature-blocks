@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-html-and-scss-SeQI5kdHw)
+- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-html-scss-3vMLhtBqr)
 - Live Site URL: [Live Demo](https://captkraken.github.io/huddle-landing-page-with-alternating-feature-blocks/)
 
 ## My process
