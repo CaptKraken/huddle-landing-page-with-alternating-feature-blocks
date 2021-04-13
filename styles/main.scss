@@ -248,14 +248,14 @@ img {
   }
 
   &__link {
-    &--1 {
-    }
-    &--2 {
-      margin-bottom: 3rem;
-    }
+  }
+  &__nav {
+    margin-bottom: 4rem;
   }
   &__item {
-    margin-bottom: 1rem;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
     &--link {
       text-transform: capitalize;
       color: $clr-white;
@@ -459,6 +459,13 @@ img {
   .ready-cta {
     width: 75%;
   }
+
+  .footer {
+    &__nav {
+      columns: 2;
+      // column-gap: 1rem;
+    }
+  }
 }
 
 //1080px
@@ -502,6 +509,9 @@ img {
       &--item {
         margin-bottom: 1.5rem;
       }
+    }
+    &__nav {
+      column-gap: 7rem;
     }
   }
   .btn {
@@ -572,6 +582,10 @@ img {
   }
   .footer {
     padding: 8rem 0 2rem;
+
+    &__nav {
+      column-gap: 12rem;
+    }
   }
 }
 

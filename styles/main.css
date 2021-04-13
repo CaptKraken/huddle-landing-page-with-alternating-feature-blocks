@@ -276,11 +276,11 @@ img {
   margin-right: 1rem;
 }
 
-.footer__link--2 {
-  margin-bottom: 3rem;
+.footer__nav {
+  margin-bottom: 4rem;
 }
 
-.footer__item {
+.footer__item:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -493,6 +493,10 @@ img {
   .ready-cta {
     width: 75%;
   }
+  .footer__nav {
+    -webkit-columns: 2;
+            columns: 2;
+  }
 }
 
 @media only screen and (min-width: 67.5rem) {
@@ -531,6 +535,10 @@ img {
   }
   .footer__contact--item {
     margin-bottom: 1.5rem;
+  }
+  .footer__nav {
+    -webkit-column-gap: 7rem;
+            column-gap: 7rem;
   }
   .btn--hero {
     font-size: 1rem;
@@ -596,6 +604,10 @@ img {
   }
   .footer {
     padding: 8rem 0 2rem;
+  }
+  .footer__nav {
+    -webkit-column-gap: 12rem;
+            column-gap: 12rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
