@@ -121,7 +121,7 @@ img {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 85vh;
   background: #ebfbff url(../images/bg-hero-mobile.svg) top/cover no-repeat;
 }
 
