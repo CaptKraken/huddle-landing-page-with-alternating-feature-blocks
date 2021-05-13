@@ -118,10 +118,10 @@ img {
 }
 
 .header {
-  background: $clr-very-pale-cyan;
   min-height: 100vh;
 
-  background: url(../images/bg-hero-mobile.svg) top/cover no-repeat;
+  background: $clr-very-pale-cyan url(../images/bg-hero-mobile.svg) top/cover
+    no-repeat;
 
   &__top {
     align-items: center;
@@ -165,7 +165,7 @@ img {
   border-radius: 10px;
   margin: 3rem 0;
 
-  padding: 2rem;
+  padding: 1rem 2rem;
   text-align: center;
 
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -381,10 +381,11 @@ img {
     margin: 0 auto;
   }
   .header {
-    background: url(../images/bg-hero-desktop.svg) top/cover no-repeat;
+    background: $clr-very-pale-cyan url(../images/bg-hero-desktop.svg) top/cover
+      no-repeat;
     padding-top: 3rem;
     &__logo {
-      width: 13rem;
+      width: 10rem;
     }
   }
 
@@ -477,12 +478,12 @@ img {
     max-width: 62.5rem; //1000px;
   }
 
-  .header {
-    padding-top: 5rem;
-    &__logo {
-      width: 15rem;
-    }
-  }
+  // .header {
+  //   // padding-top: 5rem;
+  //   &__logo {
+  //     width: 1rem;
+  //   }
+  // }
 
   .hero {
     &__content {
